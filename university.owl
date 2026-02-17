@@ -1,267 +1,166 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/geert/ontologies/2026/1/university.owl/"
-     xml:base="http://www.semanticweb.org/geert/ontologies/2026/1/university.owl/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:university="http://www.semanticweb.org/geert/ontologies/2026/1/university.owl#"
-     xmlns:university1="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl"/>
-    
+@prefix : <https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix university: <https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl> .
+@base <https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl> .
 
+<https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl> rdf:type owl:Ontology .
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+#################################################################
+#    Object Properties
+#################################################################
 
-    
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#studies
+:studies rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Student ;
+         rdfs:range :Module .
 
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#studies -->
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#teaches
+:teaches rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Teacher ;
+         rdfs:range :Module .
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#studies">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Module"/>
-    </owl:ObjectProperty>
-    
 
+#################################################################
+#    Data properties
+#################################################################
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#teaches -->
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#first_name
+:first_name rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string .
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#teaches">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Teacher"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Module"/>
-    </owl:ObjectProperty>
-    
 
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#last_name
+:last_name rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string .
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
 
-    
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#staffID
+:staffID rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Teacher ;
+         rdfs:range xsd:positiveInteger .
 
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#first_name -->
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#studentID
+:studentID rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Student ;
+           rdfs:range xsd:positiveInteger .
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#first_name">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
 
+#################################################################
+#    Classes
+#################################################################
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#last_name -->
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CSModule
+:CSModule rdf:type owl:Class ;
+          rdfs:subClassOf :Module .
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#last_name">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
 
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#MathModule
+:MathModule rdf:type owl:Class ;
+            rdfs:subClassOf :Module .
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#staffID -->
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#staffID">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Teacher"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-    </owl:DatatypeProperty>
-    
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Module
+:Module rdf:type owl:Class .
 
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#studentID -->
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Person
+:Person rdf:type owl:Class .
 
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#studentID">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-    </owl:DatatypeProperty>
-    
 
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student
+:Student rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
 
-    
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Teacher
+:Teacher rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
 
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CSModule -->
+#################################################################
+#    Individuals
+#################################################################
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CSModule">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Module"/>
-    </owl:Class>
-    
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS1
+:CS1 rdf:type owl:NamedIndividual ,
+              :CSModule .
 
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#MathModule -->
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS2
+:CS2 rdf:type owl:NamedIndividual ,
+              :CSModule .
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#MathModule">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Module"/>
-    </owl:Class>
-    
 
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Lecturer1
+:Lecturer1 rdf:type owl:NamedIndividual ,
+                    :Teacher ;
+           :teaches :CS1 ,
+                    :M1 ;
+           :first_name "Larisa" ;
+           :last_name "Soldatova" ;
+           :staffID "417686"^^xsd:positiveInteger .
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Module -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Module"/>
-    
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Lecturer2
+:Lecturer2 rdf:type owl:NamedIndividual ,
+                    :Teacher .
 
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Person -->
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M1
+:M1 rdf:type owl:NamedIndividual ,
+             :CSModule .
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Person"/>
-    
 
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M2
+:M2 rdf:type owl:NamedIndividual ,
+             :CSModule .
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Person"/>
-    </owl:Class>
-    
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student1
+:Student1 rdf:type owl:NamedIndividual ,
+                   :Student ;
+          :studies :CS1 ,
+                   :CS2 ;
+          :first_name "Geert" ;
+          :last_name "Postmus" ;
+          :studentID "1234"^^xsd:positiveInteger .
 
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Teacher -->
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student2
+:Student2 rdf:type owl:NamedIndividual ,
+                   :Student .
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Teacher">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Person"/>
-    </owl:Class>
-    
 
+###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student3
+:Student3 rdf:type owl:NamedIndividual ,
+                   :Student .
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
 
-    
+#################################################################
+#    General axioms
+#################################################################
 
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CSModule
+                :MathModule
+                :Student
+                :Teacher
+              )
+] .
 
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CSModule"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS2 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CSModule"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Lecturer1 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Lecturer1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Teacher"/>
-        <university1:teaches rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS1"/>
-        <university1:teaches rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M1"/>
-        <university1:first_name>Larisa</university1:first_name>
-        <university1:last_name>Soldatova</university1:last_name>
-        <university1:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">417686</university1:staffID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Lecturer2 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Lecturer2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Teacher"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M1 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CSModule"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M2 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CSModule"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student1 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student"/>
-        <university1:studies rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS1"/>
-        <university1:studies rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CS2"/>
-        <university1:first_name>Geert</university1:first_name>
-        <university1:last_name>Postmus</university1:last_name>
-        <university1:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1234</university1:studentID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student2 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student3 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student3">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#CSModule"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#MathModule"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Teacher"/>
-        </owl:members>
-    </rdf:Description>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
