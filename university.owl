@@ -122,12 +122,12 @@
 
 ###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M1
 :M1 rdf:type owl:NamedIndividual ,
-             :CSModule .
+             :MathModule .
 
 
 ###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#M2
 :M2 rdf:type owl:NamedIndividual ,
-             :CSModule .
+             :MathModule .
 
 
 ###  https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/university.owl#Student1
