@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/"
+     xml:base="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sport="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#hasFavouriteSport -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#hasFavouriteSport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/FavouriteSport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/FavouriteSport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/FavouriteSport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/IndoorSport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/IndoorSport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/FavouriteSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/OutdoorSport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/OutdoorSport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/FavouriteSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#Lecturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Lecturer"/>
+        <sport:hasFavouriteSport rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#TableTennis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#Rugby -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#Rugby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/OutdoorSport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#Student1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#Student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/Student"/>
+        <sport:hasFavouriteSport rdf:resource="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#Rugby"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#TableTennis -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/TheJugglingOne/ontologies/refs/heads/main/sport.owl#TableTennis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ale/ontologies/2026/1/untitled-ontology-15/IndoorSport"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
