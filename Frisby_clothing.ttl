@@ -7,35 +7,46 @@
 @prefix wd:    <https://www.wikidata.org/wiki/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-:38     :Favorite    false;
+:38     :Favorite    true;
+        :Number      "29";
         :Source      "National Team";
-        :Tradeable   true;
-        :Type        "Jacket";
+        :Tradeable   false;
+        :Type        "Tank Top";
         wd:Q1075138  "L";
-        wd:Q3186692  "2025";
-        wd:Q431289   "Spin Ultimate";
-        wd:Q6256     "United States";
+        wd:Q3186692  "2021";
+        wd:Q431289   "VC";
+        wd:Q6256     "Canada";
         wd:Q813912   "New" .
 
 :25     :Favorite    true;
         :Source      "National Team";
         :Tradeable   false;
-        :Type        "Long Sleeve";
-        wd:Q1075138  "M";
-        wd:Q3186692  "2019";
-        wd:Q431289   "Boon";
+        :Type        "Pants";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2025";
+        wd:Q431289   "Manifattura Sportiva";
+        wd:Q6256     "Italy";
+        wd:Q813912   "Like New" .
+
+:12     :Favorite    true;
+        :Number      "66";
+        :Source      "Club Team";
+        :Tradeable   false;
+        :Type        "Shorts";
+        wd:Q1075138  "XL";
+        wd:Q3186692  "2022";
         wd:Q6256     "Japan";
         wd:Q813912   "Like New" .
 
-:12     :Favorite    false;
-        :Number      "5";
-        :Source      "Event";
+:40     :Favorite    false;
+        :Number      "66";
+        :Source      "Club Team";
         :Tradeable   true;
-        :Type        "Jersey" , "Shorts";
+        :Type        "Pants";
         wd:Q1075138  "L";
-        wd:Q3186692  "2019" , "2023";
-        wd:Q431289   "Force Ultimate";
-        wd:Q6256     "France" , "Ireland";
+        wd:Q3186692  "2024";
+        wd:Q431289   "9UP";
+        wd:Q6256     "Italy";
         wd:Q813912   "Like New" .
 
 :0      :Favorite    false;
@@ -49,49 +60,26 @@
         wd:Q6256     "Netherlands";
         wd:Q813912   "Like New" .
 
-:18     :Favorite    false;
-        :Number      "21";
+:18     :Favorite    true;
+        :Number      "33";
         :Source      "National Team";
-        :Tradeable   true;
-        :Type        "Jersey";
-        wd:Q1075138  "M";
-        wd:Q3186692  "2019";
-        wd:Q431289   "Boon";
+        :Tradeable   false;
+        :Type        "Tank Top";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2023";
+        wd:Q431289   "VC";
         wd:Q6256     "Japan";
         wd:Q813912   "Like New" .
 
 :6      :Favorite    false;
-        :Source      "Store";
-        :Tradeable   false;
-        :Type        "Sweater";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2024";
-        wd:Q431289   "Force Ultimate";
-        wd:Q6256     "France";
-        wd:Q813912   "Like New" .
-
-:33     :Favorite    false;
-        :Number      "66";
-        :Source      "Club Team";
-        :Tradeable   true;
-        :Type        "Pants";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2024";
-        wd:Q431289   "9UP";
-        wd:Q6256     "Italy";
-        wd:Q813912   "Like New" .
-
-:20     :Favorite    false;
         :Source      "Event";
-        :Tradeable   true;
-        :Type        "Long Sleeve";
-        wd:Q1075138  "M";
-        wd:Q3186692  "2024";
-        wd:Q431289   "Club Ultimate";
-        wd:Q6256     "Japan";
-        wd:Q813912   "New" .
+        :Tradeable   false;
+        :Type        "Socks";
+        wd:Q3186692  "2025";
+        wd:Q6256     "Poland";
+        wd:Q813912   "Ok" .
 
-:26     :Favorite    true;
+:33     :Favorite    true;
         :Number      "66";
         :Source      "Club Team";
         :Tradeable   false;
@@ -102,15 +90,57 @@
         wd:Q6256     "United States";
         wd:Q813912   "New" .
 
-:13     :Favorite    true;
-        :Source      "Event";
+:20     :Favorite    false;
+        :Number      "2";
+        :Source      "National Team";
+        :Tradeable   true;
+        :Type        "Shorts";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2018";
+        wd:Q6256     "France";
+        wd:Q813912   "Ok" .
+
+:39     :Favorite    true;
+        :Number      "29";
+        :Source      "National Team";
         :Tradeable   false;
         :Type        "Shorty Shorts";
         wd:Q1075138  "L";
         wd:Q3186692  "2025";
         wd:Q431289   "VC";
-        wd:Q6256     "Spain";
-        wd:Q813912   "Like New" .
+        wd:Q6256     "Japan";
+        wd:Q813912   "New" .
+
+:26     :Favorite    false;
+        :Source      "Event";
+        :Tradeable   true;
+        :Type        "Long Sleeve";
+        wd:Q1075138  "M";
+        wd:Q3186692  "2024";
+        wd:Q431289   "Club Ultimate";
+        wd:Q6256     "Japan";
+        wd:Q813912   "New" .
+
+:13     :Favorite    false;
+        :Number      "22";
+        :Source      "Club Team";
+        :Tradeable   false;
+        :Type        "Tank Top";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2017";
+        wd:Q6256     "Italy";
+        wd:Q813912   "Bad" .
+
+:41     :Favorite    false;
+        :Number      "66";
+        :Source      "National Team";
+        :Tradeable   true;
+        :Type        "Shorts";
+        wd:Q1075138  "XL";
+        wd:Q3186692  "2017";
+        wd:Q431289   "Gaia";
+        wd:Q6256     "Japan";
+        wd:Q813912   "Ok" .
 
 :1      :Favorite    false;
         :Number      "21";
@@ -123,49 +153,27 @@
         wd:Q6256     "Italy";
         wd:Q813912   "Like New" .
 
-:19     :Favorite    true;
-        :Source      "National Team";
-        :Tradeable   false;
-        :Type        "Pants";
+:19     :Favorite    false;
+        :Number      "26";
+        :Source      "Club Team";
+        :Tradeable   true;
+        :Type        "Jersey";
         wd:Q1075138  "L";
-        wd:Q3186692  "2025";
-        wd:Q431289   "Manifattura Sportiva";
+        wd:Q3186692  "2016";
         wd:Q6256     "Italy";
         wd:Q813912   "Like New" .
 
 :7      :Favorite    false;
-        :Source      "National Team";
+        :Source      "Store";
         :Tradeable   false;
-        :Type        "Jacket";
+        :Type        "Sweater";
         wd:Q1075138  "L";
-        wd:Q3186692  "2025";
-        wd:Q431289   "Rubix Sportswear";
-        wd:Q6256     "Australia";
-        wd:Q813912   "New" .
+        wd:Q3186692  "2024";
+        wd:Q431289   "Force Ultimate";
+        wd:Q6256     "France";
+        wd:Q813912   "Like New" .
 
-:34     :Favorite    false;
-        :Number      "66";
-        :Source      "National Team";
-        :Tradeable   true;
-        :Type        "Shorts";
-        wd:Q1075138  "XL";
-        wd:Q3186692  "2017";
-        wd:Q431289   "Gaia";
-        wd:Q6256     "Japan";
-        wd:Q813912   "Ok" .
-
-:21     :Favorite    false , true;
-        :Number      "97" , "8";
-        :Source      "National Team" , "Club Team";
-        :Tradeable   true , false;
-        :Type        "Tank Top" , "Shorts";
-        wd:Q1075138  "L" , "M";
-        wd:Q3186692  "2024" , "2016";
-        wd:Q431289   "Gaia";
-        wd:Q6256     "Egypt" , "Japan";
-        wd:Q813912   "New" , "Like New" .
-
-:27     :Favorite    true;
+:34     :Favorite    true;
         :Number      "66";
         :Source      "Club Team";
         :Tradeable   false;
@@ -176,16 +184,49 @@
         wd:Q6256     "Italy";
         wd:Q813912   "Ok" .
 
-:14     :Favorite    true , false;
-        :Number      "2" , "33" , "26";
-        :Source      "Club Team" , "National Team";
-        :Tradeable   false , true;
-        :Type        "Jersey" , "Tank Top" , "Shorts";
+:21     :Favorite    false;
+        :Number      "28";
+        :Source      "Club Team";
+        :Tradeable   true;
+        :Type        "Long Sleeve";
         wd:Q1075138  "L";
-        wd:Q3186692  "2018" , "2016" , "2023";
-        wd:Q431289   "VC";
-        wd:Q6256     "France" , "Japan" , "Italy";
-        wd:Q813912   "Like New" , "Ok" .
+        wd:Q3186692  "2022";
+        wd:Q431289   "Xoom";
+        wd:Q6256     "China";
+        wd:Q813912   "Like New" .
+
+:27     :Favorite    true;
+        :Number      "8";
+        :Source      "National Team";
+        :Tradeable   false;
+        :Type        "Shorts";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2016";
+        wd:Q431289   "Gaia";
+        wd:Q6256     "Japan";
+        wd:Q813912   "Like New" .
+
+:14     :Favorite    false;
+        :Number      "87";
+        :Source      "Club Team";
+        :Tradeable   false;
+        :Type        "Shorts";
+        wd:Q1075138  "M";
+        wd:Q3186692  "2022";
+        wd:Q431289   "Boon";
+        wd:Q6256     "Japan";
+        wd:Q813912   "Like New" .
+
+:42     :Favorite    true;
+        :Number      "9";
+        :Source      "National Team";
+        :Tradeable   false;
+        :Type        "Hoodie";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2023";
+        wd:Q431289   "Lookfly";
+        wd:Q6256     "United Kingdom";
+        wd:Q813912   "Like New" .
 
 :2      :Favorite    false;
         :Number      "5";
@@ -198,40 +239,17 @@
         wd:Q6256     "France";
         wd:Q813912   "New" .
 
-:8      :Favorite    true;
-        :Number      "31";
+:8      :Favorite    false;
         :Source      "National Team";
         :Tradeable   false;
         :Type        "Jacket";
         wd:Q1075138  "L";
         wd:Q3186692  "2025";
-        wd:Q431289   "Club Ultimate";
-        wd:Q6256     "Japan";
+        wd:Q431289   "Rubix Sportswear";
+        wd:Q6256     "Australia";
         wd:Q813912   "New" .
 
 :35     :Favorite    true;
-        :Number      "9";
-        :Source      "National Team";
-        :Tradeable   false;
-        :Type        "Hoodie";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2023";
-        wd:Q431289   "Lookfly";
-        wd:Q6256     "United Kingdom";
-        wd:Q813912   "Like New" .
-
-:22     :Favorite    false;
-        :Number      "66";
-        :Source      "Club Team";
-        :Tradeable   true;
-        :Type        "Tank Top";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2024";
-        wd:Q431289   "9UP";
-        wd:Q6256     "Italy";
-        wd:Q813912   "New" .
-
-:28     :Favorite    true;
         :Number      "86";
         :Source      "National Team";
         :Tradeable   false;
@@ -242,16 +260,47 @@
         wd:Q6256     "Australia";
         wd:Q813912   "New" .
 
-:15     :Favorite    false;
-        :Number      "28";
+:22     :Favorite    false;
+        :Number      "3";
+        :Source      "National Team";
+        :Tradeable   false;
+        :Type        "Jersey";
+        wd:Q1075138  "M";
+        wd:Q3186692  "2025";
+        wd:Q431289   "VC";
+        wd:Q6256     "Japan";
+        wd:Q813912   "New" .
+
+:28     :Favorite    false;
+        :Number      "97";
         :Source      "Club Team";
         :Tradeable   true;
-        :Type        "Long Sleeve";
+        :Type        "Tank Top";
+        wd:Q1075138  "M";
+        wd:Q3186692  "2024";
+        wd:Q6256     "Egypt";
+        wd:Q813912   "New" .
+
+:15     :Favorite    false;
+        :Source      "Event";
+        :Tradeable   true;
+        :Type        "Shorts";
         wd:Q1075138  "L";
-        wd:Q3186692  "2022";
-        wd:Q431289   "Xoom";
-        wd:Q6256     "China";
+        wd:Q3186692  "2023";
+        wd:Q431289   "Force Ultimate";
+        wd:Q6256     "Ireland";
         wd:Q813912   "Like New" .
+
+:43     :Favorite    false;
+        :Number      "23";
+        :Source      "National Team";
+        :Tradeable   true;
+        :Type        "Shorts";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2025";
+        wd:Q431289   "Boon";
+        wd:Q6256     "Japan";
+        wd:Q813912   "New" .
 
 :3      :Favorite    false;
         :Number      "10";
@@ -264,38 +313,7 @@
         wd:Q6256     "United Kingdom";
         wd:Q813912   "New" .
 
-:30     :Favorite    false;
-        :Number      "25";
-        :Source      "Club Team";
-        :Tradeable   true;
-        :Type        "Long Sleeve";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2019";
-        wd:Q431289   "BE Ultimate";
-        wd:Q6256     "United Kingdom";
-        wd:Q813912   "Like New" .
-
-:9      :Favorite    false;
-        :Source      "Event";
-        :Tradeable   false;
-        :Type        "Neckie";
-        wd:Q3186692  "2023";
-        wd:Q431289   "VC";
-        wd:Q6256     "Belgium";
-        wd:Q813912   "Like New" .
-
-:36     :Favorite    false;
-        :Number      "23";
-        :Source      "National Team";
-        :Tradeable   true;
-        :Type        "Shorts";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2025";
-        wd:Q431289   "Boon";
-        wd:Q6256     "Japan";
-        wd:Q813912   "New" .
-
-:23     :Favorite    true;
+:30     :Favorite    true;
         :Number      "66";
         :Source      "National Team";
         :Tradeable   false;
@@ -306,18 +324,18 @@
         wd:Q6256     "Italy";
         wd:Q813912   "New" .
 
-:10     :Favorite    true , false;
-        :Number      "22" , "66" , "29";
-        :Source      "Club Team" , "National Team";
+:9      :Favorite    true;
+        :Number      "31";
+        :Source      "National Team";
         :Tradeable   false;
-        :Type        "Tank Top" , "Shorts" , "Jersey";
-        wd:Q1075138  "XL" , "L";
-        wd:Q3186692  "2022" , "2017" , "2025";
-        wd:Q431289   "Boon";
-        wd:Q6256     "Japan" , "Italy";
-        wd:Q813912   "Bad" , "New" , "Like New" .
+        :Type        "Jacket";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2025";
+        wd:Q431289   "Club Ultimate";
+        wd:Q6256     "Japan";
+        wd:Q813912   "New" .
 
-:29     :Favorite    false;
+:36     :Favorite    false;
         :Number      "33";
         :Source      "National Team";
         :Tradeable   false;
@@ -328,16 +346,55 @@
         wd:Q6256     "Japan";
         wd:Q813912   "New" .
 
-:16     :Favorite    false;
-        :Number      "3";
-        :Source      "National Team";
-        :Tradeable   false;
-        :Type        "Jersey";
+:23     :Favorite    false;
+        :Source      "Event";
+        :Tradeable   true;
+        :Type        "Long Sleeve";
         wd:Q1075138  "M";
         wd:Q3186692  "2025";
-        wd:Q431289   "VC";
+        wd:Q431289   "Club Ultimate";
         wd:Q6256     "Japan";
+        wd:Q813912   "Like New" .
+
+:10     :Favorite    false;
+        :Source      "Event";
+        :Tradeable   false;
+        :Type        "Neckie";
+        wd:Q3186692  "2023";
+        wd:Q431289   "VC";
+        wd:Q6256     "Belgium";
+        wd:Q813912   "Like New" .
+
+:29     :Favorite    false;
+        :Number      "66";
+        :Source      "Club Team";
+        :Tradeable   true;
+        :Type        "Tank Top";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2024";
+        wd:Q431289   "9UP";
+        wd:Q6256     "Italy";
         wd:Q813912   "New" .
+
+:16     :Favorite    false;
+        :Number      "5";
+        :Source      "Event";
+        :Tradeable   true;
+        :Type        "Jersey";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2019";
+        wd:Q6256     "France";
+        wd:Q813912   "Like New" .
+
+:44     :Favorite    false;
+        :Source      "Event";
+        :Tradeable   true;
+        :Type        "Hoodie";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2022";
+        wd:Q431289   "VC";
+        wd:Q6256     "United States";
+        wd:Q813912   "Ok" .
 
 :4      :Favorite    true;
         :Number      "5";
@@ -351,27 +408,6 @@
         wd:Q813912   "Like New" .
 
 :31     :Favorite    true;
-        :Number      "29";
-        :Source      "National Team";
-        :Tradeable   false;
-        :Type        "Tank Top";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2021";
-        wd:Q431289   "VC";
-        wd:Q6256     "Canada";
-        wd:Q813912   "New" .
-
-:37     :Favorite    false;
-        :Source      "Event";
-        :Tradeable   true;
-        :Type        "Hoodie";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2022";
-        wd:Q431289   "VC";
-        wd:Q6256     "United States";
-        wd:Q813912   "Ok" .
-
-:24     :Favorite    true;
         :Number      "32";
         :Source      "National Team";
         :Tradeable   false;
@@ -382,45 +418,76 @@
         wd:Q6256     "Japan";
         wd:Q813912   "Like New" .
 
-:11     :Favorite    false;
-        :Number      "87";
+:37     :Favorite    false;
+        :Number      "25";
         :Source      "Club Team";
-        :Tradeable   false;
-        :Type        "Shorts";
+        :Tradeable   true;
+        :Type        "Long Sleeve";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2019";
+        wd:Q431289   "BE Ultimate";
+        wd:Q6256     "United Kingdom";
+        wd:Q813912   "Like New" .
+
+:24     :Favorite    false;
+        :Number      "21";
+        :Source      "National Team";
+        :Tradeable   true;
+        :Type        "Jersey";
         wd:Q1075138  "M";
-        wd:Q3186692  "2022";
+        wd:Q3186692  "2019";
         wd:Q431289   "Boon";
         wd:Q6256     "Japan";
         wd:Q813912   "Like New" .
 
-:17     :Favorite    false;
-        :Source      "Event";
-        :Tradeable   true;
-        :Type        "Long Sleeve";
-        wd:Q1075138  "M";
-        wd:Q3186692  "2025";
-        wd:Q431289   "Club Ultimate";
-        wd:Q6256     "Japan";
-        wd:Q813912   "Like New" .
-
-:5      :Favorite    false , true;
-        :Number      "42";
-        :Source      "National Team" , "Event";
-        :Tradeable   false;
-        :Type        "Shorts" , "Socks";
-        wd:Q1075138  "L";
-        wd:Q3186692  "2023" , "2025";
-        wd:Q431289   "BE Ultimate";
-        wd:Q6256     "Canada" , "Poland";
-        wd:Q813912   "Like New" , "Ok" .
-
-:32     :Favorite    true;
+:11     :Favorite    false;
         :Number      "29";
         :Source      "National Team";
+        :Tradeable   false;
+        :Type        "Jersey";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2025";
+        wd:Q431289   "Boon";
+        wd:Q6256     "Japan";
+        wd:Q813912   "New" .
+
+:17     :Favorite    true;
+        :Source      "Event";
         :Tradeable   false;
         :Type        "Shorty Shorts";
         wd:Q1075138  "L";
         wd:Q3186692  "2025";
         wd:Q431289   "VC";
-        wd:Q6256     "Japan";
+        wd:Q6256     "Spain";
+        wd:Q813912   "Like New" .
+
+:45     :Favorite    false;
+        :Source      "National Team";
+        :Tradeable   true;
+        :Type        "Jacket";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2025";
+        wd:Q431289   "Spin Ultimate";
+        wd:Q6256     "United States";
         wd:Q813912   "New" .
+
+:5      :Favorite    true;
+        :Number      "42";
+        :Source      "National Team";
+        :Tradeable   false;
+        :Type        "Shorts";
+        wd:Q1075138  "L";
+        wd:Q3186692  "2023";
+        wd:Q431289   "BE Ultimate";
+        wd:Q6256     "Canada";
+        wd:Q813912   "Like New" .
+
+:32     :Favorite    true;
+        :Source      "National Team";
+        :Tradeable   false;
+        :Type        "Long Sleeve";
+        wd:Q1075138  "M";
+        wd:Q3186692  "2019";
+        wd:Q431289   "Boon";
+        wd:Q6256     "Japan";
+        wd:Q813912   "Like New" .
